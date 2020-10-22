@@ -1,26 +1,26 @@
 <template>
-  <img alt="kodujemyDobrePiwo logo" src="./assets/beer-bottle.svg" id="logo"/>
-  <h1>kodujemyDobrePiwo</h1>
-  <Sidebar />
-  <main>
-    <router-view />
-  </main>
+  <div class="">
+    <div id="main" class="flex h-screen w-screen">
+      <Sidebar />
+      <div class="flex w-full flex-col bg-gray-100">
+      <Nav />
+        <Main />
+      <Footer />
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
 
-import {Sidebar} from  './components'
+import {Main, Sidebar, Nav, Footer} from  './components'
 
 export default {
   components: {
     Sidebar,
+    Nav,
+    Main,
+    Footer,
   },
 }
 </script>
-
-<style>
-#logo {
-  width: 200px;
-  height: 200px;
-}
-</style>
