@@ -5,7 +5,7 @@
 <script>
 export default {
   props: {
-    recipe: String
+    recipe: String,
   },
-}
+};
 </script>

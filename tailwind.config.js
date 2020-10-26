@@ -3,16 +3,10 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [
-    './public/**/*.html',
-    './src/**/*.vue'
-  ],
+  purge: ["./public/**/*.html", "./src/**/*.vue"],
   theme: {
     extend: {},
   },
   variants: {},
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
-}
+  plugins: [require("tailwindcss"), require("autoprefixer")],
+};

@@ -1,3 +1,1 @@
-<template>
-    Recipes
-</template>
+<template>Recipes</template>
