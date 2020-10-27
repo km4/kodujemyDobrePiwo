@@ -1,10 +1,16 @@
 <template>
 <div class="">
-<div class="flex flex-col mb-4 bg-white">
-  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+<div class="flex flex-col mb-4">
+  <div class="my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg p-3">
-        asd
+      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg p-3 bg-white flex flex-row justify-between">
+
+
+
+
+          <a href="#" class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+            + Add recipe
+          </a>
       </div>
     </div>
   </div>
