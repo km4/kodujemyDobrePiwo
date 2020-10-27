@@ -140,9 +140,10 @@
 
 <script>
 import { ref } from "vue";
+
 export default {
   setup() {
-    let expandMenu = ref(false);
+    const expandMenu = ref(false);
 
     const toggleMenu = () => {
       expandMenu.value = !expandMenu.value;

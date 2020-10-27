@@ -3,17 +3,16 @@
     <div id="main" class="flex h-screen w-screen">
       <Sidebar />
       <div class="flex w-full flex-col bg-gray-100">
-      <Nav />
+        <Nav />
         <Main />
-      <Footer />
-        </div>
+        <Footer />
+      </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
-
-import {Main, Sidebar, Nav, Footer} from  './components'
+import { Main, Sidebar, Nav, Footer } from "./components";
 
 export default {
   components: {
@@ -22,5 +21,5 @@ export default {
     Main,
     Footer,
   },
-}
+};
 </script>
