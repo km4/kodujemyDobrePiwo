@@ -75,10 +75,7 @@
 <script>
 import { ref, computed } from 'vue'
 
-export default {
-  setup() {
-      const searchTerm = ref('');
-      const placeholderData = ref([
+const placeholderData = ref([
         {
           name: 'Sworne Gacie',
           alcohol: 4,
@@ -105,12 +102,14 @@ export default {
         }
       ]);
 
-      const filteredResults = computed(function() {
+export default {
+  setup() {
+      const searchTerm = ref('');
+      const filteredResults = computed(() => {
         return placeholderData.value.filter(
           (recipe) => {
             return recipe.name.toLowerCase().includes(searchTerm.value.toLowerCase()) 
-          }
-          );
+          });
       });
     
     return {
