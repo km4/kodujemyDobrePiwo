@@ -3,4 +3,12 @@ import App from "./App.vue";
 import router from "./router";
 import "./assets/css/tailwind.css";
 
-createApp(App).use(router).mount("#app");
+import { Modal } from "./components/";
+
+const app = createApp(App);
+
+app.use(router);
+
+app.component("Modal", Modal);
+
+app.mount("#app");
