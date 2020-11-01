@@ -106,9 +106,7 @@
       </div>
     </div>
   </div>
-  <teleport to="body">
-    <Modal @close="showModal = false" v-if="showModal" />
-  </teleport>
+  <Modal @close="showModal = false" v-if="showModal" />
 </template>
 
 <script>
