@@ -146,7 +146,7 @@ export default {
     const showModal = ref(false);
     const searchTerm = ref("");
     const filteredResults = computed(() => {
-      return placeholderData.value.filter((recipe) => {
+      return placeholderData.value.filter(recipe => {
         return recipe.name
           .toLowerCase()
           .includes(searchTerm.value.toLowerCase());
