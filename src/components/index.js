@@ -5,4 +5,7 @@ import Footer from "./Footer.vue";
 import Sidebar from "./Sidebar.vue";
 import Card from "./Card.vue";
 
-export { Main, Nav, Footer, Sidebar, Card };
+// global components
+import Modal from "./Modal.vue";
+
+export { Main, Nav, Footer, Sidebar, Card, Modal };
